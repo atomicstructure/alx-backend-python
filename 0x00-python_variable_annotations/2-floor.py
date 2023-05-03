@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import math
 """Task 2's module.
 """
+import math
 
 
 def floor(n: float) -> int:
