@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Task 10's module.
 """
-from typing import Any, List, Union
+from typing import Any, Sequence, Union
 
 
-def safe_first_element(lst: List[Any]) -> Union[Any, None]:
+def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
     """Retrieves the first element of a sequence if it exists.
     """
     if lst:
