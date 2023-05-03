@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """Task 11's module.
 """
-from typing import Any, Mapping, Union, TypeVar
-
+from typing import Dict, TypeVar
 
 T = TypeVar('T')
-Res = Union[Any, T]
-Def = Union[T, None]
+V = TypeVar('V')
 
-
-def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
-    """Retrieves a value from a dict using a given key.
+def safely_get_value(dct: Dict[T, V], key: T, default: V = None) -> V:
+    """Given a dictionary and a key, returns the value of the key.
     """
     if key in dct:
         return dct[key]
